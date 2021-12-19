@@ -93,7 +93,33 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="../">
+        <li class="chapter " data-level="1.1" data-path="../win10/win10.html">
+            
+                <a href="../win10/win10.html">
+            
+                    
+                    win10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    =======
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
             
                 <a href="../">
             
@@ -166,21 +192,21 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.4" data-path="正则.html">
+
+            </ul>
             
-                <a href="正则.html#使用对象创建正则表达式">
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../git/git.html">
+            
+                <a href="../git/git.html">
             
                     
-                    使用对象创建正则表达式
+                    git
             
                 </a>
             
 
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -230,6 +256,89 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x6B63;&#x5219;">&#x6B63;&#x5219;</h1>
+<pre><code>git+gitbook
+&#x5728;github&#x65B0;&#x5EFA;&#x4ED3;&#x5E93;&#x5B58;&#x653E;book
+&#x628A;&#x8BE5;&#x4ED3;&#x5E93;&#x4E0B;&#x8F7D;&#x5230;&#x672C;&#x5730;
+
+gitbook init
+&#x65B0;&#x5EFA;book
+gitbook init
+gitbook build . docs
+gitbook serve &#x542F;&#x52A8;&#x672C;&#x5730;&#x670D;&#x52A1; &#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x663E;&#x793A;book
+
+&#x5C55;&#x793A;&#x5230;github &#x7684;page&#x4E2D;
+&#x5728;setting&#x4E2D;&#x627E;&#x5230;page  source &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x548C;&#x76EE;&#x5F55; rootor docs
+&#x5728;&#x672C;&#x5730;&#x5C06;&#x6587;&#x4EF6;&#x6784;&#x5EFA;&#x5230;docs&#x76EE;&#x5F55;&#x4E2D;  gitbook build . docs 
+&#x5C06;&#x672C;&#x5730;&#x6587;&#x4EF6;push&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;
+git add *
+git commit -m&quot;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&quot;
+&#x63A8;&#x9001;&#x4EE3;&#x7801;  &#x7B2C;&#x4E00;&#x6B21;&#x63A8;&#x9001;&#x7684;&#x65F6;&#x5019;&#x8981;&#x6DFB;&#x52A0;&#x8FDC;&#x7A0B;&#x7684;&#x4EE3;&#x7801;&#x5E93;&#x5230;&#x914D;&#x7F6E;
+git remote add origin https://github.com/zhong635725959/droplook.git
+
+git push origin reg 
+&#x600E;&#x4E48;&#x5408;&#x5E76;&#x5206;&#x652F;&#x6765;&#x7740;,&#x5427;&#x6240;&#x6709;&#x5206;&#x652F;&#x5408;&#x5E76;&#x5230;&#x4E3B;&#x5206;&#x652F; mege
+
+
+&lt;&lt;========&gt;&gt;&gt;&gt;
+git branch &#x67E5;&#x770B;&#x5206;&#x652F;
+git branch js &#x521B;&#x5EFA;&#x672C;&#x5730;&#x5206;&#x652F;
+git checkout main &#x5207;&#x6362;&#x5230;main&#x5206;&#x652F;
+git checkout -b js &#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;&#x5230;&#x65B0;&#x5206;&#x652F;
+
+
+//&#x66F4;&#x65B0;&#x5206;&#x652F;&#x4EE3;&#x7801;&#x5E76;&#x63D0;&#x4EA4;
+git add * 
+git commit -m&quot;&#x63D0;&#x4EA4;&#x5206;&#x652F;&#x7684;&#x63CF;&#x8FF0;&quot;
+git push origin reg &#x63D0;&#x4EA4;&#x5230;&#x8FDC;&#x7A0B;&#x6307;&#x5B9A;&#x5206;&#x652F;
+
+//&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x62C9;&#x53D6;&#x7279;&#x5B9A;&#x5206;&#x652F;,&#x662F;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x540D;&#x5B57;
+git checkout --track origin/2.1.1
+
+//&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;
+git push origin :develop
+</code></pre><pre><code>gitbook&#x914D;&#x7F6E;&#x76EE;&#x5F55;&#x7684;&#x6298;&#x53E0;&#x529F;&#x80FD;
+&#x5728;book&#x6839;&#x76EE;&#x5F55;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;book.json&#x6587;&#x4EF6;
+    &#x6DFB;&#x52A0;&#x5185;&#x5BB9; {&quot;plugins&quot;:{&quot;expandable-chapters&quot;}}
+&#x5728;book&#x6839;&#x76EE;&#x5F55;&#x6307;&#x5B9A;gitbook install
+&#x91CD;&#x65B0;&#x6267;&#x884C;gitbook init    gitbook build . docs
+</code></pre><pre><code>&#x4F7F;&#x7528;i5ting_toc &#x628A;md&#x6587;&#x6863;&#x505A;&#x6210;&#x6709;&#x76EE;&#x5F55;&#x7684;&#x7F51;&#x9875;&#x6587;&#x4EF6;
+&#x5B89;&#x88C5;   npm install i5ting_toc -g
+&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;md&#x6587;&#x4EF6;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x8FD0;&#x884C;  i5ting_toc -f index.md
+&#x5728;&#x8BE5;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x627E;&#x5230;preview&#x76EE;&#x5F55;,cd &#x8FDB;&#x53BB;&#x6253;&#x5F00;index.html&#x5373;&#x53EF;
+-f file
+-o open in browser
+</code></pre><pre><code>https://www.zhihu.com/question/48929348   md&#x6587;&#x6863;&#x751F;&#x6210;&#x5DE6;&#x4FA7;&#x76EE;&#x5F55;
+
+gitbook.com
+
+&#x7528;Gitbook&#x7EC4;&#x7EC7;&#x6587;&#x6863;&#x5E76;&#x5C55;&#x793A;&#x5230;Github&#x7684;Pages&#x4E2D;
+&#x628A;gitbook&#x914D;&#x7F6E;&#x5230;github page&#x4E0A;
+https://www.jianshu.com/p/8a513823a988
+
+&#x63A8;&#x9001;&#x4EE3;&#x7801;&#x5230;github remote
+https://www.cnblogs.com/android-blogs/p/5816833.html
+
+&#x5931;&#x8D25;&#x95EE;&#x9898;
+https://blog.csdn.net/weixin_45317091/article/details/113409909
+&#x89E3;&#x51B3;--&#x6BD4;&#x4E0D;&#x4E0A;remote&#x90A3;&#x4E2A;
+https://blog.csdn.net/chaorwin/article/details/51921294
+
+&#x62A5;&#x9519; &#x91CD;&#x8981;  Git&#x62A5;&#x9519;&#x89E3;&#x51B3;&#xFF1A;OpenSSL SSL_read: Connection was reset, errno 10054 &#x9519;&#x8BEF;&#x89E3;&#x51B3;
+git config --global http.sslVerify &quot;false&quot;
+&#x6B64;&#x65F6;&#x518D;&#x6267;&#x884C;git&#x64CD;&#x4F5C;&#x5373;&#x53EF;,&#x9047;&#x5230;&#x95EE;&#x9898;&#x6574;&#x4E2A;&#x641C;&#x4E0D;&#x5230;&#x5C31;&#x641C;&#x540E;&#x534A;&#x6BB5;,&#x4E5F;&#x8BB8;&#x95EE;&#x9898;&#x5C31;&#x89E3;&#x51B3;&#x4E86;
+https://blog.csdn.net/weixin_43945983/article/details/110882074
+
+GitBook&#x5FEB;&#x901F;&#x6559;&#x7A0B; 2.2 &#x76EE;&#x5F55;&#x9875;&#x548C;&#x666E;&#x901A;&#x9875; &#x8E0F;&#x7834;&#x94C1;&#x978B; &#x7AE0;&#x8282;&#x951A;&#x70B9;
+https://blog.csdn.net/iotisan/article/details/81121263
+</code></pre><pre><code>You already have a server listening on 35729 You should stop it and try again.
+&#x7AEF;&#x53E3;&#x88AB;&#x5360;&#x7528;
+&#x6253;&#x5F00;cmd &#x8F93;&#x5165;netstat -ano|findstr 35729
+&#x63A5;&#x7740;&#x8F93;&#x5165;&#xFF1A;taskkill /F /PID 12172---&gt;&#x4E3A;&#x4E0A;&#x9762;&#x56DE;&#x8F66;&#x540E;&#x663E;&#x793A;&#x7684;pid
+
+
+git&#x914D;&#x7F6E;&#x591A;&#x7528;&#x6237;&#x548C;&#x90AE;&#x7BB1;
+https://www.cnblogs.com/xiangtingshen/p/12174442.html
+</code></pre><p>git&#x7684;tag&#x600E;&#x4E48;&#x4F7F;&#x7528;</p>
 <blockquote>
 <p>B&#x7AD9;&#x6B63;&#x5219;&#x6559;&#x7A0B;1<a href="https://www.bilibili.com/video/BV12J41147fC?p=14" target="_blank">&#x6B63;&#x5219;</a></p>
 </blockquote>
@@ -351,7 +460,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"正则","level":"2.1","depth":1,"next":{"title":"正则表达式介绍","level":"2.1.1","depth":2,"anchor":"#正则表达式介绍","path":"正则/正则.md","ref":"正则/正则.md#正则表达式介绍","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"正则/正则.md","mtime":"2021-12-17T14:53:37.637Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-17T15:08:37.553Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"正则","level":"2.1","depth":1,"next":{"title":"正则表达式介绍","level":"2.1.1","depth":2,"anchor":"#正则表达式介绍","path":"正则/正则.md","ref":"正则/正则.md#正则表达式介绍","articles":[]},"previous":{"title":"Introduction","level":"1.3","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"正则/正则.md","mtime":"2021-12-19T13:16:59.646Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-19T13:17:59.602Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
