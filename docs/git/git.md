@@ -1,3 +1,36 @@
+## 合并分支
+
+- git使用步骤大概是这样的
+  - `add->commit->fetch->pull->push`-`添加代码->提交代码->抓取代码->拉取代码->推送代码`
+
+  - ```
+    git代码合并使用步骤思路
+    1 git fetch origin 同步所有线上分支
+    2.git pull origin home --allow-unrelated-history
+    	在当前分支下pull需要合并到的那个分支,后面参数是干掉报错的
+    	 refusing to merge unrelated histories
+    3.git status 查看差异化
+    	git add *
+    	git commit -m""
+    4. git checkout home--合并到哪的那个总分支
+    5.git merge 当前分支
+    6. git push origin home
+    
+    ```
+
+- `git fetch origin` # 同步所有线上分支
+- `git branch`# 查看有多少本地分支
+- fatal: refusing to merge unrelated histories  因为切换到远程分支,而本地并没有该分支,意思时候拒绝合并不相关的历史
+  - 需要把该远程分支pull下来
+  - `git pull origin home --allow-unrelated-histories`
+
+- you need to resolve your current index first---解决git reset --merge
+
+##  git 删除远程分支
+
+- `git push origin --delete branch_name`
+- `git branch -d branch_name` 删除本地分支
+
 ## git拉取指定分支
 
 - `git clone -b js codeRepoURL.git`

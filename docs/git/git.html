@@ -158,7 +158,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="git&#x62C9;&#x53D6;&#x6307;&#x5B9A;&#x5206;&#x652F;">git&#x62C9;&#x53D6;&#x6307;&#x5B9A;&#x5206;&#x652F;</h2>
+                                <h2 id="&#x5408;&#x5E76;&#x5206;&#x652F;">&#x5408;&#x5E76;&#x5206;&#x652F;</h2>
+<ul>
+<li><p>git&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#x5927;&#x6982;&#x662F;&#x8FD9;&#x6837;&#x7684;</p>
+<ul>
+<li><p><code>add-&gt;commit-&gt;fetch-&gt;pull-&gt;push</code>-<code>&#x6DFB;&#x52A0;&#x4EE3;&#x7801;-&gt;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;-&gt;&#x6293;&#x53D6;&#x4EE3;&#x7801;-&gt;&#x62C9;&#x53D6;&#x4EE3;&#x7801;-&gt;&#x63A8;&#x9001;&#x4EE3;&#x7801;</code></p>
+</li>
+<li><pre><code>git&#x4EE3;&#x7801;&#x5408;&#x5E76;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#x601D;&#x8DEF;
+1 git fetch origin &#x540C;&#x6B65;&#x6240;&#x6709;&#x7EBF;&#x4E0A;&#x5206;&#x652F;
+2.git pull origin home --allow-unrelated-history
+    &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E0B;pull&#x9700;&#x8981;&#x5408;&#x5E76;&#x5230;&#x7684;&#x90A3;&#x4E2A;&#x5206;&#x652F;,&#x540E;&#x9762;&#x53C2;&#x6570;&#x662F;&#x5E72;&#x6389;&#x62A5;&#x9519;&#x7684;
+     refusing to merge unrelated histories
+3.git status &#x67E5;&#x770B;&#x5DEE;&#x5F02;&#x5316;
+    git add *
+    git commit -m&quot;&quot;
+4. git checkout home--&#x5408;&#x5E76;&#x5230;&#x54EA;&#x7684;&#x90A3;&#x4E2A;&#x603B;&#x5206;&#x652F;
+5.git merge &#x5F53;&#x524D;&#x5206;&#x652F;
+6. git push origin home
+</code></pre></li>
+</ul>
+</li>
+<li><p><code>git fetch origin</code> # &#x540C;&#x6B65;&#x6240;&#x6709;&#x7EBF;&#x4E0A;&#x5206;&#x652F;</p>
+</li>
+<li><code>git branch</code># &#x67E5;&#x770B;&#x6709;&#x591A;&#x5C11;&#x672C;&#x5730;&#x5206;&#x652F;</li>
+<li><p>fatal: refusing to merge unrelated histories  &#x56E0;&#x4E3A;&#x5207;&#x6362;&#x5230;&#x8FDC;&#x7A0B;&#x5206;&#x652F;,&#x800C;&#x672C;&#x5730;&#x5E76;&#x6CA1;&#x6709;&#x8BE5;&#x5206;&#x652F;,&#x610F;&#x601D;&#x65F6;&#x5019;&#x62D2;&#x7EDD;&#x5408;&#x5E76;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5386;&#x53F2;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x628A;&#x8BE5;&#x8FDC;&#x7A0B;&#x5206;&#x652F;pull&#x4E0B;&#x6765;</li>
+<li><code>git pull origin home --allow-unrelated-histories</code></li>
+</ul>
+</li>
+<li><p>you need to resolve your current index first---&#x89E3;&#x51B3;git reset --merge</p>
+</li>
+</ul>
+<h2 id="git-&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;">git &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</h2>
+<ul>
+<li><code>git push origin --delete branch_name</code></li>
+<li><code>git branch -d branch_name</code> &#x5220;&#x9664;&#x672C;&#x5730;&#x5206;&#x652F;</li>
+</ul>
+<h2 id="git&#x62C9;&#x53D6;&#x6307;&#x5B9A;&#x5206;&#x652F;">git&#x62C9;&#x53D6;&#x6307;&#x5B9A;&#x5206;&#x652F;</h2>
 <ul>
 <li><code>git clone -b js codeRepoURL.git</code></li>
 <li><a href="https://www.jianshu.com/p/856ce249ed78" target="_blank">&#x62C9;&#x53D6;&#x6307;&#x5B9A;&#x5206;&#x652F;</a></li>
@@ -268,7 +305,7 @@ and the repository exists.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/git.md","mtime":"2021-12-18T17:32:28.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-18T17:35:06.914Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git","level":"1.2","depth":1,"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git/git.md","mtime":"2021-12-19T12:41:09.887Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-19T12:44:18.763Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
