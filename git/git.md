@@ -1,3 +1,29 @@
+## 合并分支2
+
+```
+add->commit->fetch->pull->push
+add->commit->fetch->pull->push
+
+1.	git fetch origin 
+2. 	git pull origin home --allow-unrelated-histories
+3.	git status 
+	git add *
+	git add commit
+4. 	git checkout home
+5. 	git merge git
+6.	git push origin home
+```
+
+
+
+## git撤销操作[网址](https://www.cnblogs.com/liangzhixiaolaohu/p/14977650.html)
+
+
+
+
+
+
+
 ## 合并分支
 
 - git使用步骤大概是这样的
