@@ -18,6 +18,9 @@ git代码合并使用步骤思路
 git fetch origin # 同步所有线上分支
 ```
 
+## 本地:远程
+`git push origin master:home`
+
 ## 合并分支2
 
 ```
