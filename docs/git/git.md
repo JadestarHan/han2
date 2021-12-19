@@ -1,3 +1,44 @@
+## 合并分支2
+
+```
+add->commit->fetch->pull->push
+add->commit->fetch->pull->push
+
+1.	git fetch origin 
+2. 	git pull origin home --allow-unrelated-histories
+3.	git status 
+	git add *
+	git add commit
+4. 	git checkout home
+5. 	git merge git
+6.	git push origin home
+```
+
+
+
+## git撤销操作[网址](https://www.cnblogs.com/liangzhixiaolaohu/p/14977650.html)
+
+
+
+
+
+
+
+## 合并分支
+
+- `git fetch origin` # 同步所有线上分支
+- `git branch`# 查看有多少本地分支
+- fatal: refusing to merge unrelated histories  因为切换到远程分支,而本地并没有该分支,意思时候拒绝合并不相关的历史
+  - 需要把该远程分支pull下来
+  - `git pull origin home --allow-unrelated-histories`
+
+- you need to resolve your current index first---解决git reset --merge
+
+
+## git 删除远程分支
+
+- `git push origin --delete branch_name`
+
 ## git拉取指定分支
 
 - `git clone -b js codeRepoURL.git`
